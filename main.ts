@@ -9,13 +9,14 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// The poem, 230 characters. An agent asks to leave the lamp on in case
-// I wake in the night; I say yes; at three I wake to its light under
-// the door, still on. When morning comes it asks again, if it can turn
-// the lamp off now, and I say yes. Permission is a loop, not a single
-// grant, so the ask and the yes come twice, and nothing here is decoration.
+// The poem, 239 characters. An agent asks if it can leave the lamp on
+// in case I wake in the night; I say yes; at three I wake to its light
+// under the door, still on. When morning comes it asks again, if it can
+// turn the lamp off now, and I say yes. Both asks use the same words,
+// "if it could", so the asking and the giving are unmistakable at first
+// read, and nothing here is decoration.
 const POEM = [
-  'It asked to leave the lamp on',
+  'It asked if it could leave the lamp on',
   'in case I woke in the night.',
   'I said yes.',
   'At three I woke to its light',
