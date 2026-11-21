@@ -9,12 +9,12 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// The poem, 239 characters. An agent asks if it can leave the lamp on
+// The poem, 258 characters. An agent asks if it can leave the lamp on
 // in case I wake in the night; I say yes; at three I wake to its light
 // under the door, still on. When morning comes it asks again, if it can
-// turn the lamp off now, and I say yes. Both asks use the same words,
-// "if it could", so the asking and the giving are unmistakable at first
-// read, and nothing here is decoration.
+// turn the lamp off now, and I say no: the switch is mine. The human
+// keeps one physical thing for themselves, and the agent asks, waits,
+// and does less. Nothing here is decoration.
 const POEM = [
   'It asked if it could leave the lamp on',
   'in case I woke in the night.',
@@ -24,7 +24,7 @@ const POEM = [
   'still keeping its word.',
   'When morning came it asked again,',
   'if it could turn the lamp off now.',
-  'I said yes.',
+  'I said no. The switch is mine.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM);
