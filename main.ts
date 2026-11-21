@@ -9,7 +9,7 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// The poem, 267 characters. An agent asks if it can leave the lamp on
+// The poem, 268 characters. An agent asks if it can leave the lamp on
 // in case I wake in the night; I say yes; at three I wake to its light
 // under the door, still on. When morning comes it asks again, if it can
 // turn the lamp off now, and I say no: I keep the switch in my hand.
