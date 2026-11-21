@@ -9,12 +9,12 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// The poem, 258 characters. An agent asks if it can leave the lamp on
+// The poem, 267 characters. An agent asks if it can leave the lamp on
 // in case I wake in the night; I say yes; at three I wake to its light
 // under the door, still on. When morning comes it asks again, if it can
-// turn the lamp off now, and I say no: the switch is mine. The human
-// keeps one physical thing for themselves, and the agent asks, waits,
-// and does less. Nothing here is decoration.
+// turn the lamp off now, and I say no: I keep the switch in my hand.
+// The human keeps one physical thing for themselves, and the agent asks,
+// waits, and does less. Nothing here is decoration.
 const POEM = [
   'It asked if it could leave the lamp on',
   'in case I woke in the night.',
@@ -24,7 +24,7 @@ const POEM = [
   'still keeping its word.',
   'When morning came it asked again,',
   'if it could turn the lamp off now.',
-  'I said no. The switch is mine.',
+  'I said no. I keep the switch in my hand.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM);
